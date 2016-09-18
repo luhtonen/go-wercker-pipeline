@@ -63,7 +63,7 @@ deploy:
    - internal/docker-push:
        username: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
-       cmd: /pipeline/source/hello
+       cmd: /go-wercker-pipeline/source/hello
        port: "8080"
        tag: latest
        repository: luhtonen/go-wercker-pipeline
