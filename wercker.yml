@@ -61,10 +61,9 @@ build:
 deploy:
  steps:
    - internal/docker-push:
-       username: $DOCKER_USERNAME
+       email: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
        cmd: /pipeline/source/go-wercker-pipeline
-       port: "8080"
        tag: latest
        repository: luhtonen/go-wercker-pipeline
        registry: https://registry.hub.docker.com
