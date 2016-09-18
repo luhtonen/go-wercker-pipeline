@@ -68,12 +68,3 @@ deploy:
        tag: latest
        repository: luhtonen/go-wercker-pipeline
        registry: https://registry.hub.docker.com
-
-   - cng/cf-deploy:
-       api: $API
-       user: $USER
-       password: $PASSWORD
-       org: $ORG
-       space: $SPACE
-       appname: elu-wercker-step-hello
-       docker_image: luhtonen/go-wercker-pipeline
